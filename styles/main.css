@@ -2,15 +2,22 @@
 /*'Redressed', cursive;*/
 body {
   margin: 0;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(49, 48, 48, 1) 100%
+  );
 }
 
 .container {
   display: flex;
+  flex-direction: column;
+  width: 100vw;
 }
 
 .container > .header_wrapper {
   display: flex;
-  background-color: #313030;
+  /* background-color: #313030; */
   color: white;
   font-family: "Oswald", sans-serif;
   height: 8rem;
@@ -28,7 +35,7 @@ body {
 .header_middle {
   font-size: 1.8rem;
   width: 50vw;
-  background-color: #313030;
+  /* background-color: #313030; */
 }
 
 .header_middle > .header_middle_wrapper {
@@ -44,9 +51,11 @@ body {
 }
 
 .header_middle > .header_middle_wrapper a:hover {
-  background-color: rgb(24, 128, 128);
+  font-size: 1.9rem;
+  letter-spacing: 4px;
   text-decoration: underline;
   color: white;
+  transition: 0.5s;
 }
 
 .header_right {
@@ -59,4 +68,65 @@ body {
   .header_wrapper {
     flex-direction: column;
   }
+  .header_middle_wrapper {
+    flex-direction: column;
+    width: 100vw;
+    padding: 50px;
+    height: auto;
+  }
+}
+
+.homepage_body_wrapper {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  flex-direction: column;
+  margin: 0;
+}
+
+.homepage_body_wrapper p {
+  font-size: 3rem;
+  color: rgb(155, 154, 154);
+  border-bottom: 1px solid #696767;
+  font-family: "Redressed", cursive;
+  margin: 0px 75px;
+}
+.homepage_body_wrapper > .body_top_picture {
+  display: flex;
+}
+
+.homepage_body_wrapper > .body_top_picture img {
+  height: auto;
+  width: 100vw;
+}
+
+.homepage_body_wrapper > .body_content {
+  display: flex;
+  margin: 10px 35px;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  width: 100vw;
+}
+
+.homepage_body_wrapper > .body_content > .photographs_body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-content: center;
+  height: 50vh;
+  width: 50vw;
+}
+
+.homepage_body_wrapper > .body_content > .photographs_body img {
+  height: 200px;
+  width: auto;
+  margin: 25px 10px;
+}
+
+.homepage_body_wrapper > .body_content > .photographs_body img:hover {
+  height: 210px;
+  width: auto;
+  margin: 15px 0px;
+  transition: 0.5s;
 }
