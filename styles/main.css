@@ -95,6 +95,7 @@ body {
 }
 .homepage_body_wrapper > .body_top_picture {
   display: flex;
+  margin: 0;
 }
 
 .homepage_body_wrapper > .body_top_picture img {
@@ -104,10 +105,10 @@ body {
 
 .homepage_body_wrapper > .body_content {
   display: flex;
-  margin: 10px 35px;
+  margin: 10px 0px;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: auto;
   width: 100vw;
 }
 
